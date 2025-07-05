@@ -1,0 +1,24 @@
+@mixin button($background-color, $color) {
+    background-color: $background-color;
+    color: $color;
+    border: 0;
+    line-height: 24px;
+    padding: 6px 20px;
+    cursor: pointer;
+}
+
+.button--link {
+    @include button(transparent, $color-primary);
+}
+
+.button--link:hover {
+    text-decoration: underline;
+}
+
+.button--primary {
+    @include button($color-primary, white)
+}
+
+.button--primary:hover {
+    background-color: $color-secondary;
+}
