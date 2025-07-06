@@ -328,8 +328,18 @@ a {
   align-items: center;
   font-size: 15px;
 }
-.header__logo {
+.header__logo-link {
+  display: flex;
   margin-right: 25px;
+  align-items: center;
+}
+.header__logo-img {
+  margin-right: 5px;
+}
+.header__logo-text {
+  font-size: 28px;
+  font-weight: 600;
+  opacity: 0.8;
 }
 .header__nav-list {
   display: flex;

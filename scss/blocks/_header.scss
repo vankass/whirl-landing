@@ -3,8 +3,20 @@
   align-items: center;
   font-size: 15px;
 
-  &__logo {
+  &__logo-link {
+    display: flex;
     margin-right: 25px;
+    align-items: center;
+  }
+
+  &__logo-img {
+    margin-right: 5px;
+  }
+
+  &__logo-text {
+    font-size: 28px;
+    font-weight: 600;
+    opacity: 0.8;
   }
 
   &__nav-list {
