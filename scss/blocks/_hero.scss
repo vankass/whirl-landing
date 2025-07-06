@@ -1,0 +1,48 @@
+.hero {
+  &__main {
+    margin-top: 70px;
+    margin-bottom: 120px;
+    display: flex;
+    align-items: center;
+  }
+
+  &__body {
+    width: 525px;
+  }
+
+  &__title {
+    font-family: "Fraunces", sans-serif;
+    font-size: 58px;
+    font-weight: 400;
+  }
+
+  &__subtitle {
+    font-size: 20px;
+    line-height: 30px;
+  }
+
+  &__buttons {
+    display: flex;
+    margin-top: 32px;
+  }
+
+  &__img {
+    margin-left: auto;
+  }
+
+  &__partners {
+    margin-top: 40px;
+    text-align: center;
+  }
+
+  &__partners-title {
+    font-size: 24px;
+  }
+
+  &__partners-list {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 60px;
+  }
+}

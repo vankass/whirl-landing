@@ -2,23 +2,39 @@
     background-color: $background-color;
     color: $color;
     border: 0;
-    line-height: 24px;
-    padding: 6px 20px;
     cursor: pointer;
+    font-size: 17px;
+    line-height: 27px;
+    padding: 8px 32px;
 }
 
-.button--link {
-    @include button(transparent, $color-primary);
-}
+.button {
+    &--link {
+        @include button(transparent, $color-primary);
+        
+    }
+    
+    &--link:hover {
+        text-decoration: underline;
+    }
+    
+    &--link-hero {
+        display: flex;
+        align-items: center;
+        gap: 5px;
+    }
 
-.button--link:hover {
-    text-decoration: underline;
-}
+    &--primary {
+        @include button($color-primary, white)
+    }
+    
+    &--primary:hover {
+        background-color: $color-secondary;
+    }
 
-.button--primary {
-    @include button($color-primary, white)
-}
-
-.button--primary:hover {
-    background-color: $color-secondary;
+    &--small {
+        font-size: 15px;
+        line-height: 24px;
+        padding: 6px 20px;
+    }
 }
