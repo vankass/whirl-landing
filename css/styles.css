@@ -310,7 +310,7 @@ template {
   display: none;
 } 
 body {
-  padding: 20px 150px;
+  padding: 0px 150px;
   font-family: "Inter", sans-serif;
 }
 
@@ -321,6 +321,13 @@ li {
 a {
   text-decoration: none;
   color: black;
+}
+
+h3 {
+  font-family: "Fraunces", sans-serif;
+  font-size: 25px;
+  font-weight: 400;
+  margin: 10px 0;
 }
 
 .header {
@@ -357,7 +364,7 @@ a {
 
 .button--link {
   background-color: transparent;
-  color: #0070A0;
+  color: #0070a0;
   border: 0;
   cursor: pointer;
   font-size: 17px;
@@ -373,7 +380,7 @@ a {
   gap: 5px;
 }
 .button--primary {
-  background-color: #0070A0;
+  background-color: #0070a0;
   color: white;
   border: 0;
   cursor: pointer;
@@ -427,6 +434,31 @@ a {
   justify-content: center;
   align-items: center;
   gap: 60px;
+}
+
+.benefits {
+  display: flex;
+  justify-content: center;
+  margin-top: 160px;
+  margin-bottom: 120px;
+  gap: 32px;
+}
+.benefits__card {
+  width: 300px;
+  padding: 32px;
+}
+.benefits__card--yellow {
+  background-color: #FAEA73;
+}
+.benefits__card--blue {
+  background-color: #CCEFF6;
+}
+.benefits__card--pink {
+  background-color: #F7CEDC;
+}
+.benefits__card-subtitle {
+  line-height: 24px;
+  font-weight: 400;
 }
 
 /*# sourceMappingURL=styles.css.map */

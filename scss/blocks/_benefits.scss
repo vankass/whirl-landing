@@ -1,0 +1,30 @@
+.benefits {
+    display: flex;
+    justify-content: center;
+    margin-top: 160px;
+    margin-bottom: 120px;
+
+    gap: 32px;
+
+    &__card {
+        width: 300px;
+        padding: 32px;
+    }
+
+    &__card--yellow {
+        background-color: #FAEA73;
+    }
+
+    &__card--blue {
+        background-color: #CCEFF6;
+    }
+
+    &__card--pink {
+        background-color: #F7CEDC;
+    }
+
+    &__card-subtitle {
+        line-height: 24px;
+        font-weight: 400;
+    }
+}
