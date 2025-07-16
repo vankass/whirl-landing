@@ -5,7 +5,6 @@ $color-primary: #0070a0;
 $color-secondary: #00638d;
 
 body {
-  padding: 0px 150px;
   font-family: "Inter", sans-serif;
 }
 
@@ -18,9 +17,27 @@ a {
   color: black;
 }
 
+h4 {
+  font-family: "Fraunces", sans-serif;
+  font-size: 21px;
+  font-weight: 400;
+  margin: 10px 0;
+}
+
 h3 {
   font-family: "Fraunces", sans-serif;
   font-size: 25px;
   font-weight: 400;
   margin: 10px 0;
+}
+
+h2 {
+  font-family: "Fraunces", sans-serif;
+  font-size: 42px;
+  font-weight: 400;
+  margin: 10px 0;
+}
+
+.container {
+  padding: 0px 150px;
 }

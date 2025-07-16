@@ -310,7 +310,6 @@ template {
   display: none;
 } 
 body {
-  padding: 0px 150px;
   font-family: "Inter", sans-serif;
 }
 
@@ -323,11 +322,29 @@ a {
   color: black;
 }
 
+h4 {
+  font-family: "Fraunces", sans-serif;
+  font-size: 21px;
+  font-weight: 400;
+  margin: 10px 0;
+}
+
 h3 {
   font-family: "Fraunces", sans-serif;
   font-size: 25px;
   font-weight: 400;
   margin: 10px 0;
+}
+
+h2 {
+  font-family: "Fraunces", sans-serif;
+  font-size: 42px;
+  font-weight: 400;
+  margin: 10px 0;
+}
+
+.container {
+  padding: 0px 150px;
 }
 
 .header {
@@ -459,6 +476,53 @@ h3 {
 .benefits__card-subtitle {
   line-height: 24px;
   font-weight: 400;
+}
+
+.features {
+  background-color: #F7F9FA;
+  padding: 80px 150px;
+}
+.features__body {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.features__item-button {
+  display: flex;
+  align-items: center;
+  background-color: transparent;
+  border: 1px solid #CECAC4;
+  border-left: 0;
+  border-right: 0;
+  width: 450px;
+  height: 64px;
+  cursor: pointer;
+}
+.features__item-button.open {
+  border-bottom: none;
+}
+.features__item-img {
+  margin: 0 10px;
+  height: 32px;
+}
+.features__item-arrow {
+  margin-left: auto;
+  margin-right: 10px;
+  height: 10px;
+}
+.features__item-content {
+  max-height: 0;
+  overflow: hidden;
+  padding: 0 27px 0 60px;
+  width: 363px;
+  transition: max-height 0.3s ease, padding 0.3s ease;
+}
+.features__item-content.open {
+  max-height: 500px;
+  padding: 14px 27px 14px 60px;
+}
+.features__img {
+  margin-right: 100px;
 }
 
 /*# sourceMappingURL=styles.css.map */
