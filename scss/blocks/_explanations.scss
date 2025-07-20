@@ -1,0 +1,15 @@
+.explanations {
+    padding: 120px 0;
+    display: flex;
+    justify-content: center;
+
+    &__title {
+        margin-right: 135px;
+    }
+
+    &__cards {
+        display: flex;
+        gap: 32px;
+        align-items: end;
+    }
+}

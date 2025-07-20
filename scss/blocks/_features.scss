@@ -24,6 +24,14 @@
         }
     }
 
+    &__item-header {
+        color: #626A72;
+        transition: 0.6s ease-in-out;
+        &.open {
+            color: black;
+        }
+    }
+
     &__item-img {
         margin: 0 10px;
         height: 32px;

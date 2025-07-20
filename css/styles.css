@@ -501,6 +501,13 @@ h2 {
 .features__item-button.open {
   border-bottom: none;
 }
+.features__item-header {
+  color: #626A72;
+  transition: 0.6s ease-in-out;
+}
+.features__item-header.open {
+  color: black;
+}
 .features__item-img {
   margin: 0 10px;
   height: 32px;
@@ -523,6 +530,20 @@ h2 {
 }
 .features__img {
   margin-right: 100px;
+}
+
+.explanations {
+  padding: 120px 0;
+  display: flex;
+  justify-content: center;
+}
+.explanations__title {
+  margin-right: 135px;
+}
+.explanations__cards {
+  display: flex;
+  gap: 32px;
+  align-items: end;
 }
 
 /*# sourceMappingURL=styles.css.map */
