@@ -322,6 +322,10 @@ a {
   color: black;
 }
 
+p {
+  line-height: 24px;
+}
+
 h4 {
   font-family: "Fraunces", sans-serif;
   font-size: 21px;
@@ -345,6 +349,10 @@ h2 {
 
 .container {
   padding: 0px 150px;
+}
+
+.white {
+  color: white;
 }
 
 .header {
@@ -381,7 +389,7 @@ h2 {
 
 .button--link {
   background-color: transparent;
-  color: #0070a0;
+  color: #006B99;
   border: 0;
   cursor: pointer;
   font-size: 17px;
@@ -396,8 +404,17 @@ h2 {
   align-items: center;
   gap: 5px;
 }
+.button--link-usage {
+  background-color: transparent;
+  color: white;
+  border: 0;
+  cursor: pointer;
+  font-size: 17px;
+  line-height: 27px;
+  padding: 8px 32px;
+}
 .button--primary {
-  background-color: #0070a0;
+  background-color: #006B99;
   color: white;
   border: 0;
   cursor: pointer;
@@ -412,6 +429,9 @@ h2 {
   font-size: 15px;
   line-height: 24px;
   padding: 6px 20px;
+}
+.button--no-hover:hover {
+  background-color: transparent;
 }
 
 .hero__main {
@@ -544,6 +564,26 @@ h2 {
   display: flex;
   gap: 32px;
   align-items: end;
+}
+
+.usage {
+  background-color: #006B99;
+  padding: 80px 150px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.usage__img {
+  margin-right: 187px;
+}
+.usage__list {
+  padding: 0;
+}
+.usage__list-item {
+  margin-bottom: 12px;
+}
+.usage__list-item img {
+  margin-right: 6px;
 }
 
 /*# sourceMappingURL=styles.css.map */
