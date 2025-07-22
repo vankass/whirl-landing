@@ -555,10 +555,9 @@ h2 {
 .explanations {
   padding: 120px 0;
   display: flex;
-  justify-content: center;
 }
 .explanations__title {
-  margin-right: 135px;
+  margin-right: 350px;
 }
 .explanations__cards {
   display: flex;
@@ -584,6 +583,18 @@ h2 {
 }
 .usage__list-item img {
   margin-right: 6px;
+}
+
+.automation {
+  margin-top: 120px;
+}
+.automation__main {
+  margin-bottom: 67px;
+  font-size: 18px;
+}
+.automation__cards {
+  display: flex;
+  gap: 150px;
 }
 
 /*# sourceMappingURL=styles.css.map */

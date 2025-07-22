@@ -1,0 +1,13 @@
+.automation {
+    margin-top: 120px;
+
+    &__main {
+        margin-bottom: 67px;
+        font-size: 18px;
+    }
+
+    &__cards {
+        display: flex;
+        gap: 150px;
+    }
+}
