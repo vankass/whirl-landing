@@ -1,0 +1,52 @@
+.posts {
+    margin-top: 120px;
+    padding: 80px 150px;
+    background-color: #F7F9FA;
+
+    &__header {
+        display: flex;
+        justify-content: center;
+        margin-bottom: 32px;
+        gap: 500px;
+    }
+
+    &__body {
+        display: flex;
+        gap: 32px;
+        justify-content: center;
+    }
+
+    &__card {
+        background-color: white;
+        transition: 0.3 ease-in-out;
+    }
+
+    &__card:hover {
+        margin-top: -1px;
+    }
+
+    &__card-body {
+        padding: 24px;
+    }
+
+    &__card-category {
+        background-color: #E6F7FF;
+        padding: 4px 12px;
+        color: #2C90C9;
+        font-size: 12px;
+        transition: 0.3 ease-in-out;
+    }
+
+    &__card-category:hover {
+        color: #23719f;
+        text-decoration: underline;
+    }
+
+    &__card-subtitle {
+        font-size: 14px;
+    }
+
+    &__card-date {
+        font-size: 12px;
+    }
+}
