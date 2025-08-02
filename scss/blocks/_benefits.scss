@@ -8,6 +8,11 @@
     &__card {
         width: 300px;
         padding: 32px;
+        transition: 0.3s ease-in-out;
+
+        &:hover {
+            width: 305px;
+        }
     }
 
     &__card--yellow {
