@@ -1,0 +1,23 @@
+.purchase {
+    background-color: #E6F7FF;
+    margin: 80px 155px;
+    padding: 64px;
+
+    &__subtitle {
+        margin-bottom: 30px;
+    }
+
+    &__checks {
+        margin-top: 18px;
+        font-size: 13px;
+        color: #626A72;
+    }
+
+    &__check {
+        margin-right: 32px;
+    }
+
+    &__check-img {
+        margin-right: 7px;
+    }
+}

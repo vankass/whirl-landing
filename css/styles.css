@@ -641,4 +641,24 @@ h2 {
   font-size: 12px;
 }
 
+.purchase {
+  background-color: #E6F7FF;
+  margin: 80px 155px;
+  padding: 64px;
+}
+.purchase__subtitle {
+  margin-bottom: 30px;
+}
+.purchase__checks {
+  margin-top: 18px;
+  font-size: 13px;
+  color: #626A72;
+}
+.purchase__check {
+  margin-right: 32px;
+}
+.purchase__check-img {
+  margin-right: 7px;
+}
+
 /*# sourceMappingURL=styles.css.map */
