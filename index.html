@@ -17,18 +17,26 @@
             </a>
         </div>
 
-        <nav class="header__nav">
-            <ul class="header__nav-list">
-                <li class="header__nav-item"><a href="#Features" class="header__nav-link">Features</a></li>
-                <li class="header__nav-item"><a href="#Pricing" class="header__nav-link">Pricing</a></li>
-                <li class="header__nav-item"><a href="#Integrations" class="header__nav-link">Integrations</a></li>
-                <li class="header__nav-item"><a href="#Learn" class="header__nav-link">Learn</a></li>
-            </ul>
-        </nav>
+        <button class="header__burger js-burger" aria-label="Toggle menu">
+            <span class="header__burger-line"></span>
+            <span class="header__burger-line"></span>
+            <span class="header__burger-line"></span>
+        </button>
+
+        <div class="header__menu js-menu">
+            <nav class="header__nav">
+                <ul class="header__nav-list">
+                    <li class="header__nav-item"><a href="#Features" class="header__nav-link">Features</a></li>
+                    <li class="header__nav-item"><a href="#Pricing" class="header__nav-link">Pricing</a></li>
+                    <li class="header__nav-item"><a href="#Integrations" class="header__nav-link">Integrations</a></li>
+                    <li class="header__nav-item"><a href="#Learn" class="header__nav-link">Learn</a></li>
+                </ul>
+            </nav>
+        </div>
 
         <div class="header__auth">
-            <button class="button button--link button--small">Sign In</button>
-            <button class="button button--primary button--small">Book a demo</button>
+            <button class="button button__header button--link button--small">Sign In</button>
+            <button class="button button__header button--primary button--small">Book a demo</button>
         </div>
     </header>
 
@@ -358,7 +366,8 @@
         <hr color="#DEE5EB">
 
         <div class="footer__copyright">
-            <p>© 2022 Whirl. All Rights Reserved. Illustrations by <a href="#Streamline" class="footer__copyright-link">Streamline</a>.</p>
+            <p>© 2022 Whirl. All Rights Reserved. Illustrations by <a href="#Streamline"
+                    class="footer__copyright-link">Streamline</a>.</p>
             <div class="footer__links-img">
                 <a href="#twitter"><img src="img/footer/social/twitter.svg" alt="twitter"></a>
                 <a href="#instagram"><img src="img/footer/social/instagram.svg" alt="instagram"></a>

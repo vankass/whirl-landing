@@ -1,3 +1,4 @@
+//accordion
 document.querySelectorAll(".features__item-button").forEach((button) => {
   button.addEventListener("click", () => {
     const content = button.nextElementSibling;
@@ -21,3 +22,17 @@ document.querySelectorAll(".features__item-button").forEach((button) => {
     }
   });
 });
+
+//burgerMenu
+document.addEventListener("DOMContentLoaded", () => {
+  const burger = document.querySelector(".js-burger");
+  const menu = document.querySelector(".js-menu");
+
+  if (burger && menu) {
+    burger.addEventListener("click", () => {
+      burger.classList.toggle("active");
+      menu.classList.toggle("open");
+    });
+  }
+});
+

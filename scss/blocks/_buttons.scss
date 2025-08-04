@@ -1,3 +1,5 @@
+@import '../media';
+
 @mixin button($background-color, $color) {
     background-color: $background-color;
     color: $color;
@@ -43,5 +45,11 @@
 
     &--no-hover:hover {
         background-color: transparent;
+    }
+
+    &__header {
+        @include mobile {
+            display: none;
+        }
     }
 }
