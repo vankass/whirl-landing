@@ -1,9 +1,20 @@
+@import '../media';
+
 .hero {
   &__main {
     margin-top: 70px;
     margin-bottom: 120px;
     display: flex;
     align-items: center;
+
+    @include tablet {
+      margin-top: 10px;
+      margin-bottom: 70px;
+    }
+
+    @include mobile {
+      margin-top: 0;
+    }
   }
 
   &__body {
@@ -14,20 +25,51 @@
     font-family: "Fraunces", sans-serif;
     font-size: 58px;
     font-weight: 400;
+
+    @include tablet {
+      font-size: 45px;
+    }
+
+    @include mobile {
+      text-align: center;
+      margin-top: 15px;
+    }
   }
 
   &__subtitle {
     font-size: 20px;
     line-height: 30px;
+
+    @include mobile {
+      text-align: center;
+    }
   }
 
   &__buttons {
     display: flex;
     margin-top: 32px;
+
+    @include mobile {
+      justify-content: center;
+    }
   }
 
   &__img {
     margin-left: auto;
+  }
+
+  &__img img {
+    @include desktop {
+      width: 400px;
+    }
+
+    @include tablet {
+      width: 300px;
+    }
+
+    @include mobile {
+      display: none;
+    }
   }
 
   &__partners {
@@ -37,6 +79,11 @@
 
   &__partners-title {
     font-size: 24px;
+
+    @include mobile {
+      font-size: 20px;
+      margin-top: 0;
+    }
   }
 
   &__partners-list {
@@ -44,5 +91,16 @@
     justify-content: center;
     align-items: center;
     gap: 60px;
+
+    @include mobile {
+      padding: 0;
+      gap: 5px;
+    }
+  }
+
+  &__partners-list img {
+    @include mobile {
+      width: 110px;
+    }
   }
 }
