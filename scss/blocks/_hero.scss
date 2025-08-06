@@ -19,6 +19,10 @@
 
   &__body {
     width: 525px;
+
+    @include mobile {
+      width: auto;
+    }
   }
 
   &__title {

@@ -1,34 +1,77 @@
+@import "../media";
+
 .benefits {
-    display: flex;
-    justify-content: center;
-    margin-top: 160px;
-    margin-bottom: 120px;
-    gap: 32px;
+  display: flex;
+  justify-content: center;
+  margin-top: 160px;
+  margin-bottom: 120px;
+  gap: 32px;
 
-    &__card {
-        width: 300px;
-        padding: 32px;
-        transition: 0.3s ease-in-out;
+  @include desktop {
+    margin-top: 100px;
+  }
 
+  @include tablet {
+    gap: 16px;
+  }
+
+  @include mobile {
+    display: grid;
+    flex-direction: column;
+    gap: 45px;
+  }
+
+  &__card {
+    width: 300px;
+    padding: 32px;
+    transition: 0.3s ease-in-out;
+
+    &:hover {
+      width: 305px;
+    }
+
+    @include desktop {
+      width: 250px;
+      padding: 20px;
+
+      &:hover {
+        width: 250px;
+      }
+    }
+
+    @include tablet {
+        width: 210px;
+      padding: 15px;
+      font-size: 14px;
+
+      &:hover {
+        width: 210px;
+      }
+    }
+
+    @include mobile {
+        width: 350px;
+        font-size: 16px;
         &:hover {
-            width: 305px;
-        }
+        width: 350px;
+      }
     }
+  }
 
-    &__card--yellow {
-        background-color: #FAEA73;
-    }
+  &__card--yellow {
+    background-color: #faea73;
+  }
 
-    &__card--blue {
-        background-color: #CCEFF6;
-    }
+  &__card--blue {
+    background-color: #cceff6;
+  }
 
-    &__card--pink {
-        background-color: #F7CEDC;
-    }
+  &__card--pink {
+    background-color: #f7cedc;
+  }
 
-    &__card-subtitle {
-        line-height: 24px;
-        font-weight: 400;
-    }
+  &__card-subtitle {
+    line-height: 24px;
+    font-weight: 400;
+  }
 }
