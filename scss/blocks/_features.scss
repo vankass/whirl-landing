@@ -1,11 +1,30 @@
+@import "../media";
+
 .features {
     background-color: #F7F9FA;   
     padding: 80px 150px;
+
+    @include desktop {
+        padding: 40px 80px;
+    }
+
+    @include tablet {
+        padding: 30px 30px;
+    }
+
+    @include mobile {
+        text-align: center;
+    }
 
     &__body {
         display: flex;
         align-items: center;
         justify-content: space-between;
+
+        @include mobile {
+            justify-content: center;
+            margin-top: 50px;
+        }
     }
 
     &__item-button {
@@ -21,6 +40,14 @@
 
         &.open {
             border-bottom: none;
+        }
+
+        @include desktop {
+            width: 400px;
+        }
+
+        @include mobile {
+            width: 430px;
         }
     }
 
@@ -46,21 +73,31 @@
     &__item-content {
     max-height: 0;
     overflow: hidden;
-    padding: 0 27px 0 60px;
-    width: 363px;
+    padding: 0 0 0 45px;
+    width: 330px;
     transition:
         max-height 0.3s ease,
         padding 0.3s ease;
 
     &.open {
         max-height: 500px;
-        padding: 14px 27px 14px 60px;
+        padding: 5px 0 14px 45px;
     }
     }
 
 
 
-    &__img {
-        margin-right: 100px;
+    &__img img {
+        @include desktop {
+            width: 400px;
+        }
+
+        @include tablet {
+            width: 340px;
+        }
+
+        @include mobile {
+            display: none;
+        }
     }
 }
