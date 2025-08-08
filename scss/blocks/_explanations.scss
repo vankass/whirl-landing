@@ -1,14 +1,82 @@
+@import "../media";
+
 .explanations {
-    padding: 120px 0;
+  padding: 100px 0;
+  display: flex;
+
+  @include desktop {
+    padding: 40px 0px;
+  }
+
+  @include tablet {
+    padding: 30px 0px;
+    display: block;
+  }
+
+  @include mobile {
+    text-align: center;
+  }
+
+  &__title {
+    text-wrap-mode: nowrap;
+    align-items: center;
+
+    @include desktop {
+      font-size: 36px;
+    }
+
+    @include tablet {
+      margin-bottom: 30px;
+    }
+  }
+
+  &__title br {
+    @include tablet {
+      display: none;
+    }
+  }
+
+  &__cards {
     display: flex;
+    gap: 32px;
+    margin-left: auto;
+    align-items: flex-end;
 
-    &__title {
-        margin-right: 350px;
+    @include desktop {
+      gap: 25px;
     }
 
-    &__cards {
-        display: flex;
-        gap: 32px;
-        align-items: end;
+    @include tablet {
+      margin-left: 5%;
     }
+
+    @include mobile {
+        flex-direction: column;
+        align-items: center;
+        margin-left: 0;
+    }
+  }
+
+  &__card {
+    width: 190px;
+    margin-right: auto;
+
+    @include mobile {
+        margin-right: 0;
+    }
+  }
+
+  &__card img {
+    @include tablet {
+      width: 35px;
+    }
+
+    @include mobile {
+        display: none;
+    }
+  }
+
+  &__card-title {
+    text-wrap-mode: nowrap;
+  }
 }

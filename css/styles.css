@@ -857,16 +857,88 @@ h2 {
 }
 
 .explanations {
-  padding: 120px 0;
+  padding: 100px 0;
   display: flex;
 }
+@media (max-width: 1280px) {
+  .explanations {
+    padding: 40px 0px;
+  }
+}
+@media (max-width: 1023px) {
+  .explanations {
+    padding: 30px 0px;
+    display: block;
+  }
+}
+@media (max-width: 767px) {
+  .explanations {
+    text-align: center;
+  }
+}
 .explanations__title {
-  margin-right: 350px;
+  text-wrap-mode: nowrap;
+  align-items: center;
+}
+@media (max-width: 1280px) {
+  .explanations__title {
+    font-size: 36px;
+  }
+}
+@media (max-width: 1023px) {
+  .explanations__title {
+    margin-bottom: 30px;
+  }
+}
+@media (max-width: 1023px) {
+  .explanations__title br {
+    display: none;
+  }
 }
 .explanations__cards {
   display: flex;
   gap: 32px;
-  align-items: end;
+  margin-left: auto;
+  align-items: flex-end;
+}
+@media (max-width: 1280px) {
+  .explanations__cards {
+    gap: 25px;
+  }
+}
+@media (max-width: 1023px) {
+  .explanations__cards {
+    margin-left: 5%;
+  }
+}
+@media (max-width: 767px) {
+  .explanations__cards {
+    flex-direction: column;
+    align-items: center;
+    margin-left: 0;
+  }
+}
+.explanations__card {
+  width: 190px;
+  margin-right: auto;
+}
+@media (max-width: 767px) {
+  .explanations__card {
+    margin-right: 0;
+  }
+}
+@media (max-width: 1023px) {
+  .explanations__card img {
+    width: 35px;
+  }
+}
+@media (max-width: 767px) {
+  .explanations__card img {
+    display: none;
+  }
+}
+.explanations__card-title {
+  text-wrap-mode: nowrap;
 }
 
 .usage {
