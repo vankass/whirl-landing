@@ -942,14 +942,57 @@ h2 {
 }
 
 .usage {
-  background-color: #006B99;
-  padding: 80px 150px;
+  background-color: #006b99;
+  padding: 80px 320px;
   display: flex;
   justify-content: center;
   align-items: center;
 }
+@media (max-width: 1280px) {
+  .usage {
+    padding: 60px 100px;
+  }
+}
+@media (max-width: 1023px) {
+  .usage {
+    padding: 30px 50px;
+  }
+}
+@media (max-width: 767px) {
+  .usage {
+    text-align: center;
+  }
+}
+.usage__title {
+  text-wrap-mode: nowrap;
+}
+.usage__subtitle {
+  text-wrap-mode: nowrap;
+}
 .usage__img {
-  margin-right: 187px;
+  margin-right: auto;
+  padding-right: 150px;
+}
+@media (max-width: 1023px) {
+  .usage__img {
+    padding-right: 40px;
+  }
+}
+@media (max-width: 767px) {
+  .usage__img {
+    margin-right: 0;
+    padding-right: 0;
+  }
+}
+@media (max-width: 1023px) {
+  .usage__img img {
+    width: 300px;
+  }
+}
+@media (max-width: 767px) {
+  .usage__img img {
+    display: none;
+  }
 }
 .usage__list {
   padding: 0;
