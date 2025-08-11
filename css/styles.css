@@ -1007,13 +1007,75 @@ h2 {
 .automation {
   margin-top: 120px;
 }
+@media (max-width: 1280px) {
+  .automation {
+    margin-top: 70px;
+  }
+}
+@media (max-width: 1023px) {
+  .automation {
+    margin-top: 50px;
+  }
+}
+@media (max-width: 767px) {
+  .automation {
+    margin-top: 40px;
+  }
+}
 .automation__main {
   margin-bottom: 67px;
   font-size: 18px;
 }
+@media (max-width: 767px) {
+  .automation__main {
+    margin-bottom: 30px;
+    text-align: center;
+  }
+}
+.automation__card-title {
+  text-wrap-mode: nowrap;
+}
+@media (max-width: 1023px) {
+  .automation__card-title {
+    font-size: 22px;
+  }
+}
+@media (max-width: 1023px) {
+  .automation__card-subtitle {
+    font-size: 15px;
+  }
+}
+@media (max-width: 767px) {
+  .automation__card-img {
+    display: none;
+  }
+}
 .automation__cards {
   display: flex;
-  gap: 150px;
+  align-items: first baseline;
+  gap: 10%;
+}
+@media (max-width: 1280px) {
+  .automation__cards {
+    gap: 5%;
+  }
+}
+@media (max-width: 1023px) {
+  .automation__cards {
+    gap: 2%;
+  }
+}
+@media (max-width: 767px) {
+  .automation__cards {
+    flex-direction: column;
+    align-items: center;
+  }
+}
+@media (max-width: 767px) {
+  .automation__card {
+    text-align: center;
+    width: 300px;
+  }
 }
 
 .posts {
