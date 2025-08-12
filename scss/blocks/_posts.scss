@@ -1,52 +1,115 @@
 .posts {
-    margin-top: 120px;
-    padding: 80px 150px;
-    background-color: #F7F9FA;
+  display: flex;
+  margin-top: 120px;
+  padding: 80px 0;
+  background-color: #f7f9fa;
+  justify-content: center;
 
-    &__header {
-        display: flex;
-        justify-content: center;
-        margin-bottom: 32px;
-        gap: 500px;
+  @include desktop {
+    margin-top: 60px;
+    padding: 50px 30px;
+  }
+
+  @include mobile {
+    padding: 50px 20px;
+  }
+
+  &__container {
+    width: 90%;
+  }
+
+  &__header {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 32px;
+    text-wrap-mode: nowrap;
+
+    &-title {
+      @include tablet {
+        font-size: 36px;
+      }
+
+      @include mobile {
+        font-size: 6vw;
+      }
     }
 
-    &__body {
-        display: flex;
-        gap: 32px;
-        justify-content: center;
+    @include mobile {
+        flex-direction: column;
+        text-align: center;
+    }
+  }
+
+  &__body {
+    display: flex;
+    justify-content: space-between;
+
+    @include mobile {
+      flex-direction: column;
+      text-align: center;
+      padding-left: 12vw;
+    }
+  }
+
+  &__card {
+    width: 32%;
+    background-color: white;
+    transition: 0.3 ease-in-out;
+
+    @include mobile {
+        width: 59vw;
+        margin-bottom: 10px;
+    }
+  }
+
+  &__card:hover {
+    margin-top: -1px;
+
+    @include mobile {
+        margin-top: 0;
+    }
+  }
+
+  &__card-img {
+    width: 100%;
+  }
+
+  &__card-body {
+    padding: 24px;
+  }
+
+  &__card-category {
+    background-color: #e6f7ff;
+    padding: 4px 12px;
+    color: #2c90c9;
+    font-size: 12px;
+    transition: 0.3 ease-in-out;
+  }
+
+  &__card-category:hover {
+    color: #23719f;
+    text-decoration: underline;
+  }
+
+  &__card-title {
+    @include desktop {
+      font-size: 22px;
     }
 
-    &__card {
-        background-color: white;
-        transition: 0.3 ease-in-out;
+    @include tablet {
+      font-size: 20px;
     }
 
-    &__card:hover {
-        margin-top: -1px;
+    @include mobile {
+        margin-top: 20px;
     }
+  }
 
-    &__card-body {
-        padding: 24px;
-    }
+  &__card-subtitle {
+    font-size: 14px;
+  }
 
-    &__card-category {
-        background-color: #E6F7FF;
-        padding: 4px 12px;
-        color: #2C90C9;
-        font-size: 12px;
-        transition: 0.3 ease-in-out;
-    }
-
-    &__card-category:hover {
-        color: #23719f;
-        text-decoration: underline;
-    }
-
-    &__card-subtitle {
-        font-size: 14px;
-    }
-
-    &__card-date {
-        font-size: 12px;
-    }
+  &__card-date {
+    font-size: 12px;
+  }
 }

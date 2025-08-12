@@ -1079,41 +1079,109 @@ h2 {
 }
 
 .posts {
+  display: flex;
   margin-top: 120px;
-  padding: 80px 150px;
-  background-color: #F7F9FA;
+  padding: 80px 0;
+  background-color: #f7f9fa;
+  justify-content: center;
+}
+@media (max-width: 1280px) {
+  .posts {
+    margin-top: 60px;
+    padding: 50px 30px;
+  }
+}
+@media (max-width: 767px) {
+  .posts {
+    padding: 50px 20px;
+  }
+}
+.posts__container {
+  width: 90%;
 }
 .posts__header {
   display: flex;
-  justify-content: center;
+  justify-content: space-between;
   margin-bottom: 32px;
-  gap: 500px;
+  text-wrap-mode: nowrap;
+}
+@media (max-width: 1023px) {
+  .posts__header-title {
+    font-size: 36px;
+  }
+}
+@media (max-width: 767px) {
+  .posts__header-title {
+    font-size: 6vw;
+  }
+}
+@media (max-width: 767px) {
+  .posts__header {
+    flex-direction: column;
+    text-align: center;
+  }
 }
 .posts__body {
   display: flex;
-  gap: 32px;
-  justify-content: center;
+  justify-content: space-between;
+}
+@media (max-width: 767px) {
+  .posts__body {
+    flex-direction: column;
+    text-align: center;
+    padding-left: 12vw;
+  }
 }
 .posts__card {
+  width: 32%;
   background-color: white;
   transition: 0.3 ease-in-out;
 }
+@media (max-width: 767px) {
+  .posts__card {
+    width: 59vw;
+    margin-bottom: 10px;
+  }
+}
 .posts__card:hover {
   margin-top: -1px;
+}
+@media (max-width: 767px) {
+  .posts__card:hover {
+    margin-top: 0;
+  }
+}
+.posts__card-img {
+  width: 100%;
 }
 .posts__card-body {
   padding: 24px;
 }
 .posts__card-category {
-  background-color: #E6F7FF;
+  background-color: #e6f7ff;
   padding: 4px 12px;
-  color: #2C90C9;
+  color: #2c90c9;
   font-size: 12px;
   transition: 0.3 ease-in-out;
 }
 .posts__card-category:hover {
   color: #23719f;
   text-decoration: underline;
+}
+@media (max-width: 1280px) {
+  .posts__card-title {
+    font-size: 22px;
+  }
+}
+@media (max-width: 1023px) {
+  .posts__card-title {
+    font-size: 20px;
+  }
+}
+@media (max-width: 767px) {
+  .posts__card-title {
+    margin-top: 20px;
+  }
 }
 .posts__card-subtitle {
   font-size: 14px;
