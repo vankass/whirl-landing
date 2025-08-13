@@ -2,13 +2,22 @@
   &__top {
     display: flex;
     padding-bottom: 64px;
+
+    @include tablet {
+      flex-direction: column;
+      padding-bottom: 20px;
+    }
   }
 
-  &__logo {
+  &__logo { 
     &-link {
       display: flex;
       align-items: center;
       margin-bottom: 22px;
+
+      @include tablet {
+        margin-bottom: 15px;
+      }
     }
 
     &-text {
@@ -21,6 +30,17 @@
 
     &-creators p {
       margin: 0;
+
+      @include tablet {
+        margin-right: 10px;
+        margin-bottom: 30px;  
+      }
+    }
+
+    &-creators {
+      @include tablet {
+        display: flex;
+      }
     }
 
     &-creator {
@@ -35,10 +55,18 @@
   &__body {
     display: flex;
     margin-left: auto;
+
+    @include tablet {
+      margin-left: 0;
+    }
   }
 
   &__nav {
     margin-right: 100px;
+
+    @include mobile {
+      margin-right: 20px;
+    }
 
     &-list {
       padding: 0;
@@ -66,6 +94,10 @@
     &-img {
       margin-bottom: -2px;
       margin-left: -15px;
+    }
+
+    @include mobile {
+      width: 190px;
     }
   }
 
