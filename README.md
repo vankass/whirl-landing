@@ -1,13 +1,19 @@
 # 🚀 Whirl Landing
 
-**Простой лендинг, свёрстанный для практики.**
+A simple landing page created for practice.  
+Built with **HTML5**, **SCSS**, and **JavaScript** following **BEM** methodology.
 
-🔗 [**Смотреть сайт**](https://vankass.github.io/whirl-landing/)
+## 🚀 Features
+- Responsive landing page layout  
+- Semantic HTML structure  
+- Styled using SCSS with BEM conventions  
 
----
+## 🛠 Technologies
+- HTML5  
+- SCSS  
+- JavaScript  
+- BEM methodology  
 
-## 🛠 Используемые технологии
-- **HTML5**
-- **SCSS**
-- **JavaScript**
-- **БЭМ**
+## 🌐 Demo
+The project is available online via GitHub Pages:  
+[https://vankass.github.io/whirl-landing/](https://vankass.github.io/whirl-landing/)
