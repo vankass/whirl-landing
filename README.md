@@ -1,5 +1,7 @@
 # 🚀 Whirl Landing
 
+🇷🇺 [Русская версия](README.ru.md)
+
 A simple landing page created for practice.  
 Built with **HTML5**, **SCSS**, and **JavaScript** following **BEM** methodology.
 
